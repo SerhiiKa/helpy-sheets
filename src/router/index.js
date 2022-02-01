@@ -7,6 +7,7 @@ const routes = [
     path: "/",
     name: "Home",
     component: Home,
+    meta: { transition: "slide" },
   },
   {
     path: "/about",
@@ -16,12 +17,13 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
-    // meta: { transition: "slide-right" },
+    meta: { transition: "slide" },
   },
   {
     path: "/:pathMatch(.*)*",
     name: "not-found",
     component: NotFound,
+    meta: { transition: "slide" },
   },
 ];
 

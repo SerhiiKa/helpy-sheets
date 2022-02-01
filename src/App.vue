@@ -4,34 +4,13 @@
     <router-link to="/about">About</router-link>
   </div>
   <router-view v-slot="{ Component, route }">
-    <transition :name="route.meta.transition || 'slide'" mode="out-in">
+    <transition :name="route.meta.transition || 'slideer'" mode="out-in">
       <component :is="Component" :key="$route.path" />
     </transition>
   </router-view>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-
 .slide-enter-active,
 .slide-leave-active {
   transition: opacity 0.5s, transform 0.8s;
