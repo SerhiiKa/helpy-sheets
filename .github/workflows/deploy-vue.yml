@@ -11,7 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - id: Build-Vue
-      uses: SerhiiKa/VuePagesAction@1.0.1
+      uses: SerhiiKa/VuePagesAction@1.0.2
       with:
         username: 'SerhiiKa'
         reponame: 'helpy-sheets'
