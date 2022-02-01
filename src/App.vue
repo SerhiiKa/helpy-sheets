@@ -34,9 +34,13 @@
 
 .slide-enter-active,
 .slide-leave-active {
-  transition: opacity 1s, transform 1s;
+  transition: opacity 0.5s, transform 0.8s;
 }
-.slide-enter-from,
+.slide-enter-from {
+  opacity: 0;
+  transform: translateX(30%);
+}
+
 .slide-leave-to {
   opacity: 0;
   transform: translateX(-30%);

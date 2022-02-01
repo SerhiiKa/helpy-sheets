@@ -6,18 +6,12 @@
         src="../assets/alphabet_education_learn_school_student_icon.png"
       />
     </router-link>
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <h1>Page not found.</h1>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
 export default {
-  name: "Home",
-  components: {
-    HelloWorld,
-  },
+  name: "NotFound",
 };
 </script>
