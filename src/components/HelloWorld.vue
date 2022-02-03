@@ -1,32 +1,26 @@
-<template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-  </div>
-</template>
+<script setup lang="ts">
+import { defineProps, toRefs } from "vue";
 
-<script>
-export default {
-  name: "HelloWorld",
-  props: {
-    msg: String,
-  },
-};
+const props = defineProps<{ msg: string }>();
+
+const { msg } = toRefs(props);
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-</style>
+<template>
+  <h1
+    class="my-7 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
+  >{{ msg }}</h1>
+  <div class="mt-2 flex flex-row">
+    <a
+      class="text-indigo-600"
+      href="https://v3.vuejs.org/guide/introduction.html"
+      target="_blank"
+    >Vue 3</a>
+    <div class="mx-2">|</div>
+    <a
+      class="text-indigo-600"
+      href="https://tailwindcss.com/docs/installation"
+      target="_blank"
+    >Tailwind</a>
+  </div>
+</template>
