@@ -26,23 +26,30 @@ setInterval(() => {
           lg:px-8
         "
       >
-        <router-link to="/">
+        <router-link to="/"
+         v-slot="{ route }"
+         >
           <img
             class="inline-block h-20 w-20 rounded-full ring-2 ring-white"
             src="./assets/1741314_graduate_graduate_cap_student_icon.svg"
-            alt=""
+            :alt=" route.meta.title "
+            width="80"
+            height="80"
           />
-        
         </router-link>
           <img
             class="inline-block h-20 w-20 rounded-full ring-2 ring-white"
             src="./assets/2064501_alphabet_education_learn_school_student_icon.svg"
             alt=""
+            width="80"
+            height="80"
           />
           <img
             class="inline-block h-20 w-20 rounded-full ring-2 ring-white"
             src="./assets/4212895_arrow_education_hardware_laptop_icon.svg"
             alt=""
+            width="80"
+            height="80"
           />
         <h1
           @click="counter = 0"

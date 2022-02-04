@@ -10,7 +10,7 @@ import 'nprogress/nprogress.css';
 const routes = [
   {
     path: "/",
-    meta: { title: "Home" },
+    meta: { title: "Home", description: "aaaa" },
     component: () => import("./views/Home.vue"),
   },
   {
