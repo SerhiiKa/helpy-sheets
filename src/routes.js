@@ -30,7 +30,7 @@ const routes = [
     component: () => import("./views/HeadLess.vue"),
   },
   {
-    path: "/:path(.*)",
+    path: "/:pathMatch(.*)*",
     meta: { title: "NotFound" },
     component: () => import("./views/NotFound.vue"),
   },
