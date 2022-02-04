@@ -9,7 +9,7 @@ jobs:
     name: Build Vue
     steps:
     - id: Build-Vue
-      uses: SerhiiKa/VuePagesAction@1.0.2
+      uses: SerhiiKa/VuePagesAction@1.0.3
       with:
         username: 'SerhiiKa'
         reponame: 'helpy-sheets'
