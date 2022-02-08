@@ -1,7 +1,7 @@
 import { createApp } from "vue";
-import "./tailwind.css";
-import App from "./App.vue";
-import { router } from "./routes.js";
+import "@/tailwind.css";
+import App from "@/App.vue";
+import { router } from "@/router/router.js";
 
 const app = createApp(App);
 
