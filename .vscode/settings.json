@@ -1,3 +1,14 @@
 {
-  "css.customData": [".vscode/css_custom_data.json"]
+  "css.customData": [".vscode/css_custom_data.json"],
+  "vetur.validation.template": false,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 }
