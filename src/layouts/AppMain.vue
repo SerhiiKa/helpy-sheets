@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <main class="py-2 px-4 md:container md:mx-auto">
+  <main class="container mx-auto">
     <router-view v-slot="{ Component, route }">
       <transition :name="route.meta.transition || 'fade'" mode="out-in">
         <component :is="Component" :key="$route.path" />

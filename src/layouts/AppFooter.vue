@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer class="container mx-auto">
     Footer
     <hr />
   </footer>

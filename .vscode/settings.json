@@ -1,5 +1,7 @@
 {
-  "css.customData": [".vscode/css_custom_data.json"],
+  "css.customData": [
+    ".vscode/css_custom_data.json"
+  ],
   "vetur.validation.template": false,
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
@@ -11,4 +13,7 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "editor.quickSuggestions": {
+    "strings": true
+  }
 }

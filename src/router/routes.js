@@ -1,11 +1,13 @@
 const routes = [
   {
     path: "/",
-    meta: { title: "Home", description: "aaaa" },
+    name: "Home",
+    meta: { title: "Home", description: "some text" },
     component: () => import("@/views/Home.vue"),
   },
   {
     path: "/about",
+    name: "About",
     meta: { title: "About" },
     // example of route level code-splitting
     // this generates a separate chunk (About.[hash].js) for this route
@@ -14,6 +16,7 @@ const routes = [
   },
   {
     path: "/headless",
+    name: "Headless",
     meta: { title: "HeadLess" },
     // example of route level code-splitting
     // this generates a separate chunk (HeadLess.[hash].js) for this route
@@ -22,6 +25,7 @@ const routes = [
   },
   {
     path: "/:pathMatch(.*)*",
+    name: "Not Found",
     meta: { title: "NotFound" },
     component: () => import("@/views/NotFound.vue"),
   },

@@ -5,7 +5,9 @@ import AppFooter from "@/layouts/AppFooter.vue";
 </script>
 
 <template>
-  <AppHeader />
-  <AppMain />
-  <AppFooter />
+  <div id="app-wrapp">
+    <AppHeader />
+    <AppMain />
+    <AppFooter />
+  </div>
 </template>

@@ -1,17 +1,18 @@
 <template>
-  <header class="bg-white shadow">
+  <header class="bg-green-700">
     <div
-      class="mx-auto flex max-w-7xl flex-row content-center items-center justify-between overflow-hidden px-4 py-6 sm:px-6 lg:px-8"
+      class="container mx-auto flex flex-row flex-wrap items-center justify-start p-1"
     >
-      <router-link v-slot="{ route }" to="/">
+      <router-link v-slot="{ route }" :to="{ name: 'Home' }">
         <img
-          class="inline-block h-20 w-20 rounded-full ring-2 ring-white"
-          src="@/assets/1741314_graduate_graduate_cap_student_icon.svg"
+          class="inline-block h-[40px] w-[40px]"
+          src="@/assets/alphabet_education_learn_school_student_icon.svg"
           :alt="route.meta.title"
-          width="80"
-          height="80"
+          width="40"
+          height="40"
         />
       </router-link>
+      <h1 class="mx-auto text-3xl uppercase text-white">Helpy Sheets</h1>
     </div>
   </header>
 </template>
