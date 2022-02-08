@@ -26,18 +26,15 @@ setInterval(() => {
           lg:px-8
         "
       >
-        <router-link to="/"
-         v-slot="{ route }"
-         >
+        <router-link to="/" v-slot="{ route }">
           <img
             class="inline-block h-20 w-20 rounded-full ring-2 ring-white"
             src="./assets/1741314_graduate_graduate_cap_student_icon.svg"
-            :alt=" route.meta.title "
+            :alt="route.meta.title"
             width="80"
             height="80"
           />
         </router-link>
-
 
         <h1
           @click="counter = 0"
