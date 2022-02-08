@@ -1,5 +1,4 @@
 <script setup>
-import ButtonRepo from "@/components/ButtonRepo.vue";
 import { BeakerIcon } from "@heroicons/vue/solid";
 </script>
 
@@ -26,7 +25,6 @@ import { BeakerIcon } from "@heroicons/vue/solid";
             >Back Home</router-link
           >
         </div>
-        <ButtonRepo />
       </div>
     </div>
   </div>

@@ -1,34 +1,33 @@
-<script setup>
-import ButtonRepo from "@/components/ButtonRepo.vue";
-</script>
+<script setup></script>
 
 <template>
-  <div class="flex-grow bg-white">
-    <div
-      class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8"
-    >
-      <h2
-        class="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
+  <div class="mb-5 flex flex-grow flex-col bg-white">
+    <div class="flex flex-grow flex-col rounded-3xl bg-gray-400 py-8 px-5">
+      <router-link
+        :to="{ name: 'Home' }"
+        class="mb-5 inline-flex items-center justify-center rounded-xl border border-gray-900 bg-red-600 px-5 py-3 text-3xl font-bold text-white shadow-md shadow-slate-600 transition duration-300 ease-in-out hover:bg-red-500 hover:shadow-lg hover:shadow-slate-700 focus:outline-none"
+        >Animals</router-link
       >
-        Ready to dive in?
-        <br />
-        <span class="text-indigo-600">Vite + Vue 3 + Tailwind CSS</span>
-      </h2>
-      <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
-        <div class="inline-flex rounded-md shadow">
-          <router-link
-            :to="{ name: 'About' }"
-            class="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out hover:bg-indigo-500 focus:outline-none"
-            >Next Page</router-link
-          >
-          <router-link
-            :to="{ name: 'Headless' }"
-            class="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out hover:bg-indigo-500 focus:outline-none"
-            >Headless</router-link
-          >
-        </div>
-        <ButtonRepo />
-      </div>
+      <router-link
+        :to="{ name: 'Home' }"
+        class="mb-5 inline-flex items-center justify-center rounded-xl border border-transparent bg-red-600 px-5 py-3 text-3xl font-bold text-white transition duration-150 ease-in-out hover:bg-red-900 focus:outline-none"
+        >Colours</router-link
+      >
+      <router-link
+        :to="{ name: 'Home' }"
+        class="mb-5 inline-flex items-center justify-center rounded-xl border border-transparent bg-red-600 px-5 py-3 text-3xl font-bold text-white transition duration-150 ease-in-out hover:bg-red-900 focus:outline-none"
+        >My Fmilia</router-link
+      >
+      <router-link
+        :to="{ name: 'Home' }"
+        class="mb-5 inline-flex items-center justify-center rounded-xl border border-transparent bg-red-600 px-5 py-3 text-3xl font-bold text-white transition duration-150 ease-in-out hover:bg-red-900 focus:outline-none"
+        >Food</router-link
+      >
+      <router-link
+        :to="{ name: 'Home' }"
+        class="mb-5 inline-flex items-center justify-center rounded-xl border border-transparent bg-red-600 px-5 py-3 text-3xl font-bold text-white transition duration-150 ease-in-out hover:bg-red-900 focus:outline-none"
+        >School</router-link
+      >
     </div>
   </div>
 </template>
