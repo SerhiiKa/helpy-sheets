@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <main class="container mx-auto">
+  <main class="container mx-auto flex flex-grow flex-col">
     <router-view v-slot="{ Component, route }">
       <transition :name="route.meta.transition || 'fade'" mode="out-in">
         <component :is="Component" :key="$route.path" />
