@@ -10,23 +10,11 @@ setInterval(() => {
 
 <template>
   <div>
-    <header class="bg-white shadow" v-if="$route.meta.title">
+    <header v-if="$route.meta.title" class="bg-white shadow">
       <div
-        class="
-          flex flex-row
-          justify-between
-          overflow-hidden
-          content-center
-          items-center
-          mx-auto
-          max-w-7xl
-          px-4
-          py-6
-          sm:px-6
-          lg:px-8
-        "
+        class="mx-auto flex max-w-7xl flex-row content-center items-center justify-between overflow-hidden px-4 py-6 sm:px-6 lg:px-8"
       >
-        <router-link to="/" v-slot="{ route }">
+        <router-link v-slot="{ route }" to="/">
           <img
             class="inline-block h-20 w-20 rounded-full ring-2 ring-white"
             src="./assets/1741314_graduate_graduate_cap_student_icon.svg"
@@ -37,30 +25,11 @@ setInterval(() => {
         </router-link>
 
         <h1
-          @click="counter = 0"
           class="text-3xl font-bold leading-tight text-gray-900"
+          @click="counter = 0"
         >
           <div
-            class="
-              inline-flex
-              items-center
-              justify-center
-              rounded-md
-              border border-transparent
-              bg-indigo-600
-              px-5
-              py-3
-              text-base
-              font-medium
-              leading-6
-              text-white
-              transition
-              duration-150
-              ease-in-out
-              hover:bg-indigo-500
-              focus:outline-none
-              min-w-16
-            "
+            class="inline-flex min-w-16 items-center justify-center rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out hover:bg-indigo-500 focus:outline-none"
           >
             {{ $route.meta.title }}
             / {{ counter }}
@@ -68,7 +37,7 @@ setInterval(() => {
         </h1>
       </div>
     </header>
-    <main class="md:container md:mx-auto py-2 px-4">
+    <main class="py-2 px-4 md:container md:mx-auto">
       <router-view v-slot="{ Component, route }">
         <transition :name="route.meta.transition || 'fade'" mode="out-in">
           <component :is="Component" :key="$route.path" />

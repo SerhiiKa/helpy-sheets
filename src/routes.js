@@ -4,8 +4,8 @@
 
 import { createRouter, createWebHistory } from "vue-router";
 import VueScrollTo from "vue-scrollto";
-import NProgress from 'nprogress'
-import 'nprogress/nprogress.css';
+import NProgress from "nprogress";
+import "nprogress/nprogress.css";
 
 const routes = [
   {
@@ -58,13 +58,13 @@ router.beforeEach(async (to, from, next) => {
 
 router.beforeResolve((to, from, next) => {
   if (to) {
-      NProgress.start()
+    NProgress.start();
   }
-  next()
-})
+  next();
+});
 
 router.afterEach(() => {
-  NProgress.done()
-})
+  NProgress.done();
+});
 
 export { router };

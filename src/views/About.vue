@@ -1,7 +1,6 @@
 <script setup>
-import ButtonRepo from '@/components/ButtonRepo.vue'
-import { BeakerIcon } from '@heroicons/vue/solid'
-
+import ButtonRepo from "@/components/ButtonRepo.vue";
+import { BeakerIcon } from "@heroicons/vue/solid";
 </script>
 
 <template>
@@ -15,11 +14,12 @@ import { BeakerIcon } from '@heroicons/vue/solid'
         About Page
         <br />
         <span class="text-indigo-600">Vite + Vue 3 + Tailwind CSS</span>
-        <BeakerIcon class="h-56 w-96 text-blue-500 fill-slate-500 stroke-indigo-700"/>
+        <BeakerIcon
+          class="h-56 w-96 fill-slate-500 stroke-indigo-700 text-blue-500"
+        />
       </h2>
       <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
         <div class="inline-flex rounded-md shadow">
-          
           <router-link
             to="/"
             class="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out hover:bg-indigo-500 focus:outline-none"

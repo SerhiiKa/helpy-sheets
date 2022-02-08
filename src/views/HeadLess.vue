@@ -1,17 +1,19 @@
 <template>
-  <div class="w-full bg-gradient-to-r from-cyan-500 to-blue-400 mx-auto max-w-md px-2 py-16">
+  <div
+    class="mx-auto w-full max-w-md bg-gradient-to-r from-cyan-500 to-blue-400 px-2 py-16"
+  >
     <TabGroup>
-      <TabList class="flex p-1 space-x-1 bg-blue-900/20 rounded-xl">
+      <TabList class="flex space-x-1 rounded-xl bg-blue-900/20 p-1">
         <Tab
           v-for="category in Object.keys(categories)"
-          as="template"
           :key="category"
           v-slot="{ selected }"
+          as="template"
         >
           <button
             :class="[
-              'w-full py-2.5 text-sm leading-5 font-medium text-blue-700 rounded-lg',
-              'focus:outline-none focus:ring-2 ring-offset-2 ring-offset-blue-400 ring-white ring-opacity-60',
+              'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700',
+              'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
               selected
                 ? 'bg-white shadow'
                 : 'text-blue-100 hover:bg-white/[0.12] hover:text-white',
@@ -27,22 +29,22 @@
           v-for="(posts, idx) in Object.values(categories)"
           :key="idx"
           :class="[
-            'bg-white rounded-xl p-3',
-            'focus:outline-none focus:ring-2 ring-offset-2 ring-offset-blue-400 ring-white ring-opacity-60',
+            'rounded-xl bg-white p-3',
+            'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
           ]"
         >
           <ul>
             <li
               v-for="post in posts"
               :key="post.id"
-              class="relative p-3 rounded-md hover:bg-coolGray-100"
+              class="hover:bg-coolGray-100 relative rounded-md p-3"
             >
               <h3 class="text-sm font-medium leading-5">
                 {{ post.title }}
               </h3>
 
               <ul
-                class="flex mt-1 space-x-1 text-xs font-normal leading-4 text-coolGray-500"
+                class="text-coolGray-500 mt-1 flex space-x-1 text-xs font-normal leading-4"
               >
                 <li>{{ post.date }}</li>
                 <li>&middot;</li>
@@ -55,7 +57,7 @@
                 href="#"
                 :class="[
                   'absolute inset-0 rounded-md',
-                  'focus:z-10 focus:outline-none focus:ring-2 ring-blue-400',
+                  'ring-blue-400 focus:z-10 focus:outline-none focus:ring-2',
                 ]"
               />
             </li>
@@ -67,8 +69,8 @@
 </template>
 
 <script>
-import { ref } from 'vue'
-import { TabGroup, TabList, Tab, TabPanels, TabPanel } from '@headlessui/vue'
+import { ref } from "vue";
+import { TabGroup, TabList, Tab, TabPanels, TabPanel } from "@headlessui/vue";
 
 export default {
   components: {
@@ -83,15 +85,15 @@ export default {
       Recent: [
         {
           id: 1,
-          title: 'Does drinking coffee make you smarter?',
-          date: '5h ago',
+          title: "Does drinking coffee make you smarter?",
+          date: "5h ago",
           commentCount: 5,
           shareCount: 2,
         },
         {
           id: 2,
           title: "So you've bought coffee... now what?",
-          date: '2h ago',
+          date: "2h ago",
           commentCount: 3,
           shareCount: 2,
         },
@@ -99,15 +101,15 @@ export default {
       Popular: [
         {
           id: 1,
-          title: 'Is tech making coffee better or worse?',
-          date: 'Jan 7',
+          title: "Is tech making coffee better or worse?",
+          date: "Jan 7",
           commentCount: 29,
           shareCount: 16,
         },
         {
           id: 2,
-          title: 'The most innovative things happening in coffee',
-          date: 'Mar 19',
+          title: "The most innovative things happening in coffee",
+          date: "Mar 19",
           commentCount: 24,
           shareCount: 12,
         },
@@ -115,22 +117,22 @@ export default {
       Trending: [
         {
           id: 1,
-          title: 'Ask Me Anything: 10 answers to your questions about coffee',
-          date: '2d ago',
+          title: "Ask Me Anything: 10 answers to your questions about coffee",
+          date: "2d ago",
           commentCount: 9,
           shareCount: 5,
         },
         {
           id: 2,
           title: "The worst advice we've ever heard about coffee",
-          date: '4d ago',
+          date: "4d ago",
           commentCount: 1,
           shareCount: 2,
         },
       ],
-    })
+    });
 
-    return { categories }
+    return { categories };
   },
-}
+};
 </script>

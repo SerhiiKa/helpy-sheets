@@ -1,64 +1,64 @@
 {
-    "masterPicture": "./src/assets/2064501_alphabet_education_learn_school_student_icon.svg",
-    "iconsPath": "./assets/",
-    "design": {
-        "ios": {
-            "pictureAspect": "backgroundAndMargin",
-            "backgroundColor": "#ffffff",
-            "margin": "0%",
-            "assets": {
-                "ios6AndPriorIcons": false,
-                "ios7AndLaterIcons": false,
-                "precomposedIcons": false,
-                "declareOnlyDefaultIcon": true
-            },
-            "appName": "Helpy Sheets"
-        },
-        "desktopBrowser": {
-            "design": "raw"
-        },
-        "windows": {
-            "pictureAspect": "noChange",
-            "backgroundColor": "#00aba9",
-            "onConflict": "override",
-            "assets": {
-                "windows80Ie10Tile": false,
-                "windows10Ie11EdgeTiles": {
-                    "small": false,
-                    "medium": true,
-                    "big": false,
-                    "rectangle": false
-                }
-            },
-            "appName": "Helpy Sheets"
-        },
-        "androidChrome": {
-            "pictureAspect": "noChange",
-            "themeColor": "#ffffff",
-            "manifest": {
-                "name": "Helpy Sheets",
-                "display": "standalone",
-                "orientation": "notSet",
-                "onConflict": "override",
-                "declared": true
-            },
-            "assets": {
-                "legacyIcon": false,
-                "lowResolutionIcons": false
-            }
-        },
-        "safariPinnedTab": {
-            "pictureAspect": "blackAndWhite",
-            "threshold": 79.84375,
-            "themeColor": "#5bbad5"
-        }
+  "masterPicture": "./src/assets/2064501_alphabet_education_learn_school_student_icon.svg",
+  "iconsPath": "./assets/",
+  "design": {
+    "ios": {
+      "pictureAspect": "backgroundAndMargin",
+      "backgroundColor": "#ffffff",
+      "margin": "0%",
+      "assets": {
+        "ios6AndPriorIcons": false,
+        "ios7AndLaterIcons": false,
+        "precomposedIcons": false,
+        "declareOnlyDefaultIcon": true
+      },
+      "appName": "Helpy Sheets"
     },
-    "settings": {
-        "compression": 5,
-        "scalingAlgorithm": "Mitchell",
-        "errorOnImageTooSmall": false,
-        "readmeFile": true,
-        "htmlCodeFile": true,
-        "usePathAsIs": false
+    "desktopBrowser": {
+      "design": "raw"
+    },
+    "windows": {
+      "pictureAspect": "noChange",
+      "backgroundColor": "#00aba9",
+      "onConflict": "override",
+      "assets": {
+        "windows80Ie10Tile": false,
+        "windows10Ie11EdgeTiles": {
+          "small": false,
+          "medium": true,
+          "big": false,
+          "rectangle": false
+        }
+      },
+      "appName": "Helpy Sheets"
+    },
+    "androidChrome": {
+      "pictureAspect": "noChange",
+      "themeColor": "#ffffff",
+      "manifest": {
+        "name": "Helpy Sheets",
+        "display": "standalone",
+        "orientation": "notSet",
+        "onConflict": "override",
+        "declared": true
+      },
+      "assets": {
+        "legacyIcon": false,
+        "lowResolutionIcons": false
+      }
+    },
+    "safariPinnedTab": {
+      "pictureAspect": "blackAndWhite",
+      "threshold": 79.84375,
+      "themeColor": "#5bbad5"
     }
+  },
+  "settings": {
+    "compression": 5,
+    "scalingAlgorithm": "Mitchell",
+    "errorOnImageTooSmall": false,
+    "readmeFile": true,
+    "htmlCodeFile": true,
+    "usePathAsIs": false
+  }
 }

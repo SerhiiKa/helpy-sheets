@@ -11,7 +11,7 @@ This starter template includes:
 - [Inter var font](https://github.com/rsms/inter) (self-hosted, woff2, v3.19, with 'preload' attr, check out index.html)
 - [Headless UI](https://headlessui.dev/vue/menu) - unstyled, fully accessible UI components, designed to integrate beautifully with Tailwind CSS
 - [Heroicons](https://github.com/tailwindlabs/heroicons#vue) - beautiful hand-crafted SVG icons,
-by the makers of Tailwind CSS
+  by the makers of Tailwind CSS
 - [prettier-plugin-tailwindcss](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier) - Automatic Class Sorting with Prettier
 
 First-party plugins needed for Tailwind UI:
@@ -40,4 +40,4 @@ npm run serve
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/web2033/vite-vue3-tailwind-starter)
 
 real-favicon generate faviconDescription.json faviconData.json ./public/assets
-real-favicon inject faviconData.json ./public/assets htmlFiles/*.html
+real-favicon inject faviconData.json ./public/assets htmlFiles/\*.html
