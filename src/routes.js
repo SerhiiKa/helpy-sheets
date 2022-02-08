@@ -57,18 +57,13 @@ router.beforeEach(async (to, from, next) => {
 });
 
 router.beforeResolve((to, from, next) => {
-  console.log('start', {to})
   if (to) {
-    console.log('start1')
-      // Запустить отображение загрузки
       NProgress.start()
   }
   next()
 })
 
 router.afterEach(() => {
-  // Завершить отображение загрузки
-  console.log('finish')
   NProgress.done()
 })
 
