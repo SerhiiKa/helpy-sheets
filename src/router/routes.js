@@ -2,26 +2,54 @@ const routes = [
   {
     path: "/",
     name: "Home",
-    meta: { title: "Home", description: "some text" },
+    meta: { title: "Home" },
     component: () => import("@/views/AppHome.vue"),
   },
   {
-    path: "/about",
-    name: "About",
-    meta: { title: "About" },
-    // example of route level code-splitting
-    // this generates a separate chunk (About.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import("@/views/About.vue"),
+    path: "/animals",
+    name: "Animals",
+    meta: { title: "Animals" },
+    component: () => import("@/views/CatAnimals.vue"),
   },
   {
-    path: "/headless",
-    name: "Headless",
-    meta: { title: "HeadLess" },
-    // example of route level code-splitting
-    // this generates a separate chunk (HeadLess.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import("@/views/HeadLess.vue"),
+    path: "/animals/game-one",
+    name: "Game One",
+    meta: { title: "Game One" },
+    component: () => import("@/views/CatAnimalsGameOne.vue"),
+  },
+  {
+    path: "/animals/game-two",
+    name: "Game Two",
+    meta: { title: "Game Two" },
+    component: () => import("@/views/CatAnimalsGameTwo.vue"),
+  },
+
+  {
+    path: "/colours",
+    name: "Colours",
+    meta: { title: "Colours" },
+    component: () => import("@/views/CatColours.vue"),
+  },
+
+  {
+    path: "/my-family",
+    name: "My Family",
+    meta: { title: "MyFamily" },
+    component: () => import("@/views/CatMyFamily.vue"),
+  },
+
+  {
+    path: "/food",
+    name: "Food",
+    meta: { title: "Food" },
+    component: () => import("@/views/CatFood.vue"),
+  },
+
+  {
+    path: "/school",
+    name: "School",
+    meta: { title: "School" },
+    component: () => import("@/views/CatSchool.vue"),
   },
   {
     path: "/:pathMatch(.*)*",
