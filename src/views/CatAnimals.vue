@@ -7,8 +7,8 @@ const ClassName =
 
 <template>
   <MainCanvas>
-    <router-link :to="{ name: 'Game One' }" :class="ClassName"
-      >Game One</router-link
+    <router-link :to="{ name: 'Maching Game' }" :class="ClassName"
+      >Maching Game</router-link
     >
     <router-link :to="{ name: 'Game Two' }" :class="ClassName"
       >Game Two</router-link

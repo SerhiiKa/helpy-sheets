@@ -1,5 +1,5 @@
 <template>
-  <header class="mb-5 bg-green-700">
+  <header id="main-header" class="mb-5 bg-green-700">
     <div
       class="container mx-auto flex flex-row flex-wrap items-center justify-start p-1"
     >

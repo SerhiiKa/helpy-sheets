@@ -12,10 +12,10 @@ const routes = [
     component: () => import("@/views/CatAnimals.vue"),
   },
   {
-    path: "/animals/game-one",
-    name: "Game One",
-    meta: { title: "Game One" },
-    component: () => import("@/views/CatAnimalsGameOne.vue"),
+    path: "/animals/machinggame",
+    name: "Maching Game",
+    meta: { title: "Maching Game" },
+    component: () => import("@/views/CatAnimalsMachingGame.vue"),
   },
   {
     path: "/animals/game-two",
