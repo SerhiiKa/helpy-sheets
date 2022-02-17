@@ -13,6 +13,7 @@
     "@vueuse/core": "^7.6.1",
     "nprogress": "^0.2.0",
     "vue": "^3.2.29",
+    "vue-draggable-next": "^2.1.1",
     "vue-router": "^4.0.12",
     "vue-scrollto": "^2.20.0"
   },

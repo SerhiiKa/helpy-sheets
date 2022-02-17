@@ -7,6 +7,7 @@
 
 const fs = require("fs");
 const path = require("path");
+const crypto = require("crypto");
 let i = 0;
 
 function listFilesSync(fullDirPath, directory) {
@@ -21,13 +22,25 @@ function listFilesSync(fullDirPath, directory) {
     } else {
       console.log(++i);
       let item = {};
-      item.type = path.basename(directory);
+
       item.name = path.parse(fullPath).name;
-      if (item.name === "forest" || item.name === "home") continue;
+
+      if (
+        item.name === "forest" ||
+        item.name === "home" ||
+        item.name === `${path.basename(directory)}-items`
+      )
+        continue;
+
+      let string = fullPath;
+      let hash = crypto.createHash("md5").update(string).digest("hex");
+      item.id = hash;
+
+      item.type = path.basename(directory);
       item.category = path.basename(path.dirname(fullPath));
       item.path = fullPath
         .substring(fullPath.indexOf(directory))
-        .replace("src", "../src");
+        .replace("public", "");
 
       fileList.push(item);
     }
