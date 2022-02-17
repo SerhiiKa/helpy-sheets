@@ -11,6 +11,7 @@ mainGameLists.wild_animals = ref([]);
 mainGameLists.animals = ref(animalsItem);
 
 function onMoveCallback(evt, some) {
+  console.log(evt.item);
   let item = JSON.parse(JSON.stringify(evt.item._underlying_vm_));
   // console.log(item);
   let to_list_name = evt.to.__draggable_component__._.attrs.group.name;
@@ -32,8 +33,37 @@ function onMoveCallback(evt, some) {
     });
     // console.log(tmp_list);
     mainGameLists[to_list_name].value = tmp_list;
+    speechText("Ups!");
   }
 }
+
+function onChooseCalback(evt) {
+  speechText(evt.item.innerText);
+}
+
+function speechText(msg = "Hello Kids! Let's play!") {
+  if ("speechSynthesis" in window) {
+    // Speech Synthesis supported 🎉
+    const synth =
+      window.speechSynthesis ||
+      window.mozspeechSynthesis ||
+      window.webkitspeechSynthesis;
+
+    let message = new SpeechSynthesisUtterance();
+    message.lang = "en-US";
+    message.text = msg;
+    synth.speak(message);
+    // synth.onvoiceschanged = function () {
+    //   var lang = synth.getVoices();
+    //   console.log(lang);
+    // };
+  } else {
+    // Speech Synthesis Not Supported 😣
+    console.log("Sorry, your browser doesn't support text to speech!");
+  }
+}
+
+speechText();
 </script>
 
 <template>
@@ -59,9 +89,7 @@ function onMoveCallback(evt, some) {
             :key="item.id"
             class="m-1 h-14 w-14 border-2 border-cyan-600 bg-slate-400 bg-cover bg-center bg-no-repeat p-1"
             :style="{ backgroundImage: `url(${item.path})` }"
-          >
-            {{ item.name }}
-          </div>
+          ></div>
         </draggable>
       </div>
       <div id="wild_animals_area" class="div2 flex min-h-[150px] items-stretch">
@@ -84,9 +112,7 @@ function onMoveCallback(evt, some) {
             :key="item.id"
             class="m-1 h-14 w-14 border-2 border-cyan-600 bg-slate-400 bg-cover bg-center bg-no-repeat"
             :style="{ backgroundImage: `url(${item.path})` }"
-          >
-            {{ item.name }}
-          </div>
+          ></div>
         </draggable>
       </div>
       <div id="animals_area" class="div3 flex min-h-[150px] items-stretch">
@@ -103,14 +129,18 @@ function onMoveCallback(evt, some) {
           :animation="250"
           :sort="false"
           @end="onMoveCallback"
+          @choose="onChooseCalback"
         >
           <div
             v-for="item in mainGameLists.animals.value"
             :key="item.id"
-            class="m-1 h-14 w-14 border-2 border-cyan-600 bg-sky-700 bg-cover bg-center bg-no-repeat p-1"
-            :style="{ backgroundImage: `url(${item.path})` }"
+            class="min-w-14 m-1 flex min-h-[80px] flex-col justify-end border-2 border-cyan-600 bg-sky-200 bg-cover bg-center bg-no-repeat p-1 text-center text-lg font-bold capitalize text-violet-900 underline decoration-orange-600 decoration-2 drop-shadow-md"
+            :style="{
+              backgroundImage: `url(${item.path})`,
+              textShadow: `rgb(255, 251, 37) 1px 0 10px`,
+            }"
           >
-            {{ item.name }}
+            <span>{{ item.name }}</span>
           </div>
         </draggable>
       </div>
@@ -139,16 +169,24 @@ function onMoveCallback(evt, some) {
   background: yellow;
   grid-area: 2 / 1 / 3 / 3;
 }
-
-.sortable-chosen {
-  transform: translate(5px, 4px) rotate(4deg) scale(1.03, 1.03);
+.sortable-chosen.sortable-ghost {
+  opacity: 0.5;
+  transform: scale(1.2, 1.2) translate(0, 0) rotate(0deg);
+  border: 5px rgb(80, 25, 230) solid;
 }
 .sortable-ghost {
-  opacity: 0.5;
-  transform: scale(1.2, 1.2);
+  /* opacity: 0.5; */
+  /* transform: scale(1.2, 1.2) translate(0, 0) rotate(0deg); */
+  border: 5px rgb(80, 25, 230) solid;
 }
-.sortable-chosen.sortable-ghost {
-  transform: translate(0, 0) rotate(0deg);
-  border: 3px brown solid;
+.sortable-chosen {
+  color: rgb(255, 251, 37);
+  transform: translate(5px, 4px) rotate(4deg) scale(1.03, 1.03);
+  /* border: 3px brown solid; */
+}
+.sortable-drag {
+  opacity: 0.5;
+  transform: translate(5px, 4px) rotate(4deg) scale(1.03, 1.03);
+  border: 5px brown solid;
 }
 </style>
