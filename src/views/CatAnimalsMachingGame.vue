@@ -11,7 +11,7 @@ mainGameLists.wild_animals = ref([]);
 mainGameLists.animals = ref(animalsItem);
 
 function onMoveCallback(evt, some) {
-  console.log(evt.item);
+  // console.log(evt.item);
   let item = JSON.parse(JSON.stringify(evt.item._underlying_vm_));
   // console.log(item);
   let to_list_name = evt.to.__draggable_component__._.attrs.group.name;
@@ -34,6 +34,8 @@ function onMoveCallback(evt, some) {
     // console.log(tmp_list);
     mainGameLists[to_list_name].value = tmp_list;
     speechText("Ups!");
+  } else if (item.category === to_list_name) {
+    speechText("Great!");
   }
 }
 
@@ -158,11 +160,21 @@ speechText();
 }
 
 #home_animals_area {
-  background: antiquewhite;
+  background-image: url(/public/assets/animals/home_animals/home.jpg);
+  background-size: contain;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-color: antiquewhite;
+  background-position: center;
   grid-area: 1 / 1 / 2 / 2;
 }
 #wild_animals_area {
-  background: bisque;
+  background-image: url(/public/assets/animals/wild_animals/forest.jpg);
+  background-size: contain;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-color: bisque;
+  background-position: center;
   grid-area: 1 / 2 / 2 / 3;
 }
 #animals_area {
