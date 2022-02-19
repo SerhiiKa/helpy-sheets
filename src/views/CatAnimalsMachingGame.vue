@@ -1,8 +1,17 @@
 <script setup>
 import { ref, unref } from "vue";
 import MainCanvas from "@/components/MianCanvas.vue";
-import animalsItem from "../../public/assets/animals/animals-items.json";
+import animalsItem from "@/assets/animals/animals-items.json";
 import { VueDraggableNext as draggable } from "vue-draggable-next";
+const ImgURIModules = import.meta.globEager(
+  "/src/assets/animals/*/*.{jpg,png}"
+);
+
+const url = ref(ImgURIModules);
+
+let ImgUrl = function ImgUrl(id) {
+  return url.value[id].default;
+};
 
 let mainGameLists = {};
 
@@ -10,7 +19,7 @@ mainGameLists.home_animals = ref([]);
 mainGameLists.wild_animals = ref([]);
 mainGameLists.animals = ref(animalsItem);
 
-function onMoveCallback(evt, some) {
+function onMoveCallback(evt) {
   // console.log(evt.item);
   let item = JSON.parse(JSON.stringify(evt.item._underlying_vm_));
   // console.log(item);
@@ -90,7 +99,7 @@ speechText();
             v-for="item in mainGameLists.home_animals.value"
             :key="item.id"
             class="m-1 h-14 w-14 border-2 border-cyan-600 bg-slate-400 bg-cover bg-center bg-no-repeat p-1"
-            :style="{ backgroundImage: `url(${item.path})` }"
+            :style="{ backgroundImage: `url(${ImgUrl(item.path)})` }"
           ></div>
         </draggable>
       </div>
@@ -113,7 +122,7 @@ speechText();
             v-for="item in mainGameLists.wild_animals.value"
             :key="item.id"
             class="m-1 h-14 w-14 border-2 border-cyan-600 bg-slate-400 bg-cover bg-center bg-no-repeat"
-            :style="{ backgroundImage: `url(${item.path})` }"
+            :style="{ backgroundImage: `url(${ImgUrl(item.path)})` }"
           ></div>
         </draggable>
       </div>
@@ -138,7 +147,7 @@ speechText();
             :key="item.id"
             class="min-w-14 m-1 flex min-h-[80px] flex-col justify-end border-2 border-cyan-600 bg-sky-200 bg-cover bg-center bg-no-repeat p-1 text-center text-lg font-bold capitalize text-violet-900 underline decoration-orange-600 decoration-2 drop-shadow-md"
             :style="{
-              backgroundImage: `url(${item.path})`,
+              backgroundImage: `url(${ImgUrl(item.path)})`,
               textShadow: `rgb(255, 251, 37) 1px 0 10px`,
             }"
           >
@@ -160,7 +169,7 @@ speechText();
 }
 
 #home_animals_area {
-  background-image: url(/public/assets/animals/home_animals/home.jpg);
+  background-image: url(@/assets/animals/home_animals/home.jpg);
   background-size: contain;
   background-origin: content-box;
   background-repeat: no-repeat;
@@ -169,7 +178,7 @@ speechText();
   grid-area: 1 / 1 / 2 / 2;
 }
 #wild_animals_area {
-  background-image: url(/public/assets/animals/wild_animals/forest.jpg);
+  background-image: url(@/assets/animals/wild_animals/forest.jpg);
   background-size: contain;
   background-origin: content-box;
   background-repeat: no-repeat;

@@ -39,8 +39,8 @@ function listFilesSync(fullDirPath, directory) {
       item.type = path.basename(directory);
       item.category = path.basename(path.dirname(fullPath));
       item.path = fullPath
-        .substring(fullPath.indexOf(directory))
-        .replace("public", "");
+        .substring(fullPath.indexOf(directory) - 1)
+        .replace("", "");
 
       fileList.push(item);
     }

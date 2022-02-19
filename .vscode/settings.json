@@ -15,5 +15,13 @@
   },
   "editor.quickSuggestions": {
     "strings": true
-  }
+  },
+  "liveServer.settings.root": "/dist/",
+  "liveServer.settings.proxy": {
+    "enable": true,
+    "baseUri": "/helpy-sheets/",
+    "proxyUri": "http://127.0.0.1:5500/"
+  },
+  "liveServer.settings.file": "index.html",
+  "liveServer.settings.fullReload": true
 }
