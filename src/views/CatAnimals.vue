@@ -13,5 +13,8 @@ const ClassName =
     <router-link :to="{ name: 'Game Two' }" :class="ClassName"
       >Game Two</router-link
     >
+    <router-link :to="{ name: 'Animals Song' }" :class="ClassName"
+      >Song</router-link
+    >
   </MainCanvas>
 </template>

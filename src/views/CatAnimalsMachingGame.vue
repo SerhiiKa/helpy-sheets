@@ -3,6 +3,7 @@ import { ref, unref } from "vue";
 import MainCanvas from "@/components/MianCanvas.vue";
 import animalsItem from "@/assets/animals/animals-items.json";
 import { VueDraggableNext as draggable } from "vue-draggable-next";
+import { speechText } from "@/utils/utils.js";
 const ImgURIModules = import.meta.globEager(
   "/src/assets/animals/*/*.{jpg,png}"
 );
@@ -50,28 +51,6 @@ function onMoveCallback(evt) {
 
 function onChooseCalback(evt) {
   speechText(evt.item.innerText);
-}
-
-function speechText(msg = "") {
-  if ("speechSynthesis" in window) {
-    // Speech Synthesis supported 🎉
-    const synth =
-      window.speechSynthesis ||
-      window.mozspeechSynthesis ||
-      window.webkitspeechSynthesis;
-
-    let message = new SpeechSynthesisUtterance();
-    message.lang = "en-US";
-    message.text = msg;
-    synth.speak(message);
-    // synth.onvoiceschanged = function () {
-    //   var lang = synth.getVoices();
-    //   console.log(lang);
-    // };
-  } else {
-    // Speech Synthesis Not Supported 😣
-    console.log("Sorry, your browser doesn't support text to speech!");
-  }
 }
 
 function shuffle(array) {

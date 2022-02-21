@@ -23,7 +23,12 @@ const routes = [
     meta: { title: "Game Two" },
     component: () => import("@/views/CatAnimalsGameTwo.vue"),
   },
-
+  {
+    path: "/animals/animals-song",
+    name: "Animals Song",
+    meta: { title: "Animals Song" },
+    component: () => import("@/views/CatAnimalsSong.vue"),
+  },
   {
     path: "/colours",
     name: "Colours",
