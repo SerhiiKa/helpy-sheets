@@ -52,7 +52,7 @@ function onChooseCalback(evt) {
   speechText(evt.item.innerText);
 }
 
-function speechText(msg = "Hello Kids! Let's play!") {
+function speechText(msg = "") {
   if ("speechSynthesis" in window) {
     // Speech Synthesis supported 🎉
     const synth =
@@ -74,7 +74,16 @@ function speechText(msg = "Hello Kids! Let's play!") {
   }
 }
 
-speechText();
+function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
+
+shuffle(mainGameLists.animals.value);
+
+speechText("Hello Kids! Let's play! Match the animals");
 </script>
 
 <template>
