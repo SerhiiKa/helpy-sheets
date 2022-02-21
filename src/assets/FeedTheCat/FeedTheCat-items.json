@@ -1,0 +1,142 @@
+[
+  {
+    "name": "burger",
+    "id": "24f03413798af9a7114711c460fef341",
+    "type": "FeedTheCat",
+    "category": "eatable",
+    "path": "/src/assets/FeedTheCat/eatable/burger.png"
+  },
+  {
+    "name": "chicken",
+    "id": "347dcaac7fe4f9dab4355338ec85f360",
+    "type": "FeedTheCat",
+    "category": "eatable",
+    "path": "/src/assets/FeedTheCat/eatable/chicken.jpg"
+  },
+  {
+    "name": "egg",
+    "id": "c9547f5042ffd9f095beb8a2bfd61a90",
+    "type": "FeedTheCat",
+    "category": "eatable",
+    "path": "/src/assets/FeedTheCat/eatable/egg.jpg"
+  },
+  {
+    "name": "fish",
+    "id": "cc9436c6c2a7d34a642f24edd65c7468",
+    "type": "FeedTheCat",
+    "category": "eatable",
+    "path": "/src/assets/FeedTheCat/eatable/fish.jpg"
+  },
+  {
+    "name": "meat",
+    "id": "863cf1d0ac5164996684c9929fdb61ce",
+    "type": "FeedTheCat",
+    "category": "eatable",
+    "path": "/src/assets/FeedTheCat/eatable/meat.png"
+  },
+  {
+    "name": "milk",
+    "id": "06f3cac40516f2596672ee90cee4e819",
+    "type": "FeedTheCat",
+    "category": "eatable",
+    "path": "/src/assets/FeedTheCat/eatable/milk.jpg"
+  },
+  {
+    "name": "pizza",
+    "id": "8bf3242b96deb271ea3fd1468c208a0e",
+    "type": "FeedTheCat",
+    "category": "eatable",
+    "path": "/src/assets/FeedTheCat/eatable/pizza.png"
+  },
+  {
+    "name": "apples",
+    "id": "99ab299ca376667d9a668888d608b9ca",
+    "type": "FeedTheCat",
+    "category": "noteatable",
+    "path": "/src/assets/FeedTheCat/noteatable/apples.jpg"
+  },
+  {
+    "name": "banana",
+    "id": "85ba9eabd0e8ab2ef41ec98ebc80d3db",
+    "type": "FeedTheCat",
+    "category": "noteatable",
+    "path": "/src/assets/FeedTheCat/noteatable/banana.jpg"
+  },
+  {
+    "name": "cake",
+    "id": "782e66f28546939aa3844f3713aea4c2",
+    "type": "FeedTheCat",
+    "category": "noteatable",
+    "path": "/src/assets/FeedTheCat/noteatable/cake.png"
+  },
+  {
+    "name": "chips",
+    "id": "e3da4402c055d737365a975be3f00807",
+    "type": "FeedTheCat",
+    "category": "noteatable",
+    "path": "/src/assets/FeedTheCat/noteatable/chips.png"
+  },
+  {
+    "name": "chocolate",
+    "id": "226c6d4103b727e635bf1d8239400b49",
+    "type": "FeedTheCat",
+    "category": "noteatable",
+    "path": "/src/assets/FeedTheCat/noteatable/chocolate.jpg"
+  },
+  {
+    "name": "fruit",
+    "id": "5ea5893a89b683e772740e06b7daf773",
+    "type": "FeedTheCat",
+    "category": "noteatable",
+    "path": "/src/assets/FeedTheCat/noteatable/fruit.png"
+  },
+  {
+    "name": "ice-cream",
+    "id": "e97a1d0971f3ecce853ba7d5816c4ac9",
+    "type": "FeedTheCat",
+    "category": "noteatable",
+    "path": "/src/assets/FeedTheCat/noteatable/ice-cream.png"
+  },
+  {
+    "name": "melon",
+    "id": "3de7386ac01656a96bee2429b88a694a",
+    "type": "FeedTheCat",
+    "category": "noteatable",
+    "path": "/src/assets/FeedTheCat/noteatable/melon.jpg"
+  },
+  {
+    "name": "pine-apple",
+    "id": "8791eac2ac6178a84cb6d43ae35d7776",
+    "type": "FeedTheCat",
+    "category": "noteatable",
+    "path": "/src/assets/FeedTheCat/noteatable/pine-apple.jpg"
+  },
+  {
+    "name": "popcorn",
+    "id": "c7bcb58051e0e59f8ed1dec96edb12fd",
+    "type": "FeedTheCat",
+    "category": "noteatable",
+    "path": "/src/assets/FeedTheCat/noteatable/popcorn.jpg"
+  },
+  {
+    "name": "salad",
+    "id": "539cb3c24ae4f380c5aad410d98150e4",
+    "type": "FeedTheCat",
+    "category": "noteatable",
+    "path": "/src/assets/FeedTheCat/noteatable/salad.jpg"
+  },
+  {
+    "name": "strawberry",
+    "id": "4ecb87075a0321144f984e5b426c6f62",
+    "type": "FeedTheCat",
+    "category": "noteatable",
+    "path": "/src/assets/FeedTheCat/noteatable/strawberry.jpg"
+  },
+  {
+    "name": "tomato",
+    "id": "fb73dc02f2aa035e2ac3c2d20903bc2b",
+    "type": "FeedTheCat",
+    "category": "noteatable",
+    "path": "/src/assets/FeedTheCat/noteatable/tomato.jpg"
+  }
+]

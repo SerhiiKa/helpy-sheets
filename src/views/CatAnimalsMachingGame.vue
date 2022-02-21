@@ -1,11 +1,11 @@
 <script setup>
 import { ref, unref } from "vue";
 import MainCanvas from "@/components/MianCanvas.vue";
-import animalsItem from "@/assets/animals/animals-items.json";
+import animalsItem from "@/assets/MachingAnimals/MachingAnimals-items.json";
 import { VueDraggableNext as draggable } from "vue-draggable-next";
 import { speechText } from "@/utils/utils.js";
 const ImgURIModules = import.meta.globEager(
-  "/src/assets/animals/*/*.{jpg,png}"
+  "/src/assets/MachingAnimals/*/*.{jpg,png}"
 );
 
 const url = ref(ImgURIModules);
@@ -50,6 +50,7 @@ function onMoveCallback(evt) {
 }
 
 function onChooseCalback(evt) {
+  console.log(evt);
   speechText(evt.item.innerText);
 }
 
@@ -157,7 +158,7 @@ speechText("Hello Kids! Let's play! Match the animals");
 }
 
 #home_animals_area {
-  background-image: url(@/assets/animals/home_animals/home.jpg);
+  background-image: url(@/assets/MachingAnimals/home_animals/home.jpg);
   background-size: contain;
   background-origin: content-box;
   background-repeat: no-repeat;
@@ -166,7 +167,7 @@ speechText("Hello Kids! Let's play! Match the animals");
   grid-area: 1 / 1 / 2 / 2;
 }
 #wild_animals_area {
-  background-image: url(@/assets/animals/wild_animals/forest.jpg);
+  background-image: url(@/assets/MachingAnimals/wild_animals/forest.jpg);
   background-size: contain;
   background-origin: content-box;
   background-repeat: no-repeat;

@@ -1,0 +1,261 @@
+[
+  {
+    "name": "cat",
+    "id": "a5dbed0a0dd44ae279cf77d0afe0e360",
+    "type": "MachingAnimals",
+    "category": "home_animals",
+    "path": "/src/assets/MachingAnimals/home_animals/cat.jpg"
+  },
+  {
+    "name": "chicken",
+    "id": "5eddc049b34db9f9b9b5b22651cfd418",
+    "type": "MachingAnimals",
+    "category": "home_animals",
+    "path": "/src/assets/MachingAnimals/home_animals/chicken.jpg"
+  },
+  {
+    "name": "cock",
+    "id": "4531e5cc8756d886a50e9c9f16c9006d",
+    "type": "MachingAnimals",
+    "category": "home_animals",
+    "path": "/src/assets/MachingAnimals/home_animals/cock.jpg"
+  },
+  {
+    "name": "cow",
+    "id": "3e7abbf82e973b0117c9dc1a3682dae3",
+    "type": "MachingAnimals",
+    "category": "home_animals",
+    "path": "/src/assets/MachingAnimals/home_animals/cow.jpg"
+  },
+  {
+    "name": "dog",
+    "id": "4ffe0fbe8fce38061bfcc99707701430",
+    "type": "MachingAnimals",
+    "category": "home_animals",
+    "path": "/src/assets/MachingAnimals/home_animals/dog.png"
+  },
+  {
+    "name": "duck",
+    "id": "9a312623af9d25ad0a0611d6243d8f2e",
+    "type": "MachingAnimals",
+    "category": "home_animals",
+    "path": "/src/assets/MachingAnimals/home_animals/duck.jpg"
+  },
+  {
+    "name": "goat",
+    "id": "4a4f418c77868522cf43259073b4c37e",
+    "type": "MachingAnimals",
+    "category": "home_animals",
+    "path": "/src/assets/MachingAnimals/home_animals/goat.jpg"
+  },
+  {
+    "name": "goose",
+    "id": "ec0bdc08f6c8b038c6b8f202528ed6d4",
+    "type": "MachingAnimals",
+    "category": "home_animals",
+    "path": "/src/assets/MachingAnimals/home_animals/goose.png"
+  },
+  {
+    "name": "hen",
+    "id": "abbe6cbeeb49f90df26f3efc00cf1a05",
+    "type": "MachingAnimals",
+    "category": "home_animals",
+    "path": "/src/assets/MachingAnimals/home_animals/hen.jpg"
+  },
+  {
+    "name": "horse",
+    "id": "7c2112d74fe8cbcaf8d0578ce28f14ec",
+    "type": "MachingAnimals",
+    "category": "home_animals",
+    "path": "/src/assets/MachingAnimals/home_animals/horse.jpg"
+  },
+  {
+    "name": "kitten",
+    "id": "933ca1332bbab4fae6ede89f5b9bd7b8",
+    "type": "MachingAnimals",
+    "category": "home_animals",
+    "path": "/src/assets/MachingAnimals/home_animals/kitten.jpg"
+  },
+  {
+    "name": "mouse",
+    "id": "d3b6692a259c5d61eddbf5762f2a95e3",
+    "type": "MachingAnimals",
+    "category": "home_animals",
+    "path": "/src/assets/MachingAnimals/home_animals/mouse.jpg"
+  },
+  {
+    "name": "pig",
+    "id": "77a3536a7bc8c97a50b0fa1272072954",
+    "type": "MachingAnimals",
+    "category": "home_animals",
+    "path": "/src/assets/MachingAnimals/home_animals/pig.jpg"
+  },
+  {
+    "name": "puppy",
+    "id": "b328620a1cfaf0fbd5cfffdffecac98b",
+    "type": "MachingAnimals",
+    "category": "home_animals",
+    "path": "/src/assets/MachingAnimals/home_animals/puppy.png"
+  },
+  {
+    "name": "sheep",
+    "id": "3dfd0885adaf56da269fffc31a350b98",
+    "type": "MachingAnimals",
+    "category": "home_animals",
+    "path": "/src/assets/MachingAnimals/home_animals/sheep.jpg"
+  },
+  {
+    "name": "turkey",
+    "id": "030d9381c3784bdcc6055fcf781e3c04",
+    "type": "MachingAnimals",
+    "category": "home_animals",
+    "path": "/src/assets/MachingAnimals/home_animals/turkey.png"
+  },
+  {
+    "name": "ant",
+    "id": "9e18d71c86e4aa1e289887ec983d0576",
+    "type": "MachingAnimals",
+    "category": "wild_animals",
+    "path": "/src/assets/MachingAnimals/wild_animals/ant.png"
+  },
+  {
+    "name": "bear",
+    "id": "0b4b8302b3b9c64aeb17c0d84230882c",
+    "type": "MachingAnimals",
+    "category": "wild_animals",
+    "path": "/src/assets/MachingAnimals/wild_animals/bear.jpg"
+  },
+  {
+    "name": "bee",
+    "id": "e4b4a372e81c83625545e886faac31b2",
+    "type": "MachingAnimals",
+    "category": "wild_animals",
+    "path": "/src/assets/MachingAnimals/wild_animals/bee.png"
+  },
+  {
+    "name": "cacado",
+    "id": "640041fce9baf2ecea3abc24f5f1ea0c",
+    "type": "MachingAnimals",
+    "category": "wild_animals",
+    "path": "/src/assets/MachingAnimals/wild_animals/cacado.jpg"
+  },
+  {
+    "name": "deer",
+    "id": "330cdbfe75f679af3c51412e0c914a9f",
+    "type": "MachingAnimals",
+    "category": "wild_animals",
+    "path": "/src/assets/MachingAnimals/wild_animals/deer.jpg"
+  },
+  {
+    "name": "elephant",
+    "id": "ff91fb88521b59f48a663be753cc1e9d",
+    "type": "MachingAnimals",
+    "category": "wild_animals",
+    "path": "/src/assets/MachingAnimals/wild_animals/elephant.jpg"
+  },
+  {
+    "name": "flamingo",
+    "id": "ad6e4148e23584b4eb8660c79f2ed1b9",
+    "type": "MachingAnimals",
+    "category": "wild_animals",
+    "path": "/src/assets/MachingAnimals/wild_animals/flamingo.png"
+  },
+  {
+    "name": "fox",
+    "id": "0934d378b8a54039c73b53d88803709d",
+    "type": "MachingAnimals",
+    "category": "wild_animals",
+    "path": "/src/assets/MachingAnimals/wild_animals/fox.jpg"
+  },
+  {
+    "name": "giraffe",
+    "id": "9815a5378b25f8e93865508711d4e66f",
+    "type": "MachingAnimals",
+    "category": "wild_animals",
+    "path": "/src/assets/MachingAnimals/wild_animals/giraffe.png"
+  },
+  {
+    "name": "hare",
+    "id": "891f3df4abf5b2ada7e3a5b1fcb76c7c",
+    "type": "MachingAnimals",
+    "category": "wild_animals",
+    "path": "/src/assets/MachingAnimals/wild_animals/hare.jpg"
+  },
+  {
+    "name": "hedgehog",
+    "id": "155474eabacc09f148aa605a8f4ec6d9",
+    "type": "MachingAnimals",
+    "category": "wild_animals",
+    "path": "/src/assets/MachingAnimals/wild_animals/hedgehog.jpg"
+  },
+  {
+    "name": "hippo",
+    "id": "2b5ed19de859f89a79f0947a2d86ef9c",
+    "type": "MachingAnimals",
+    "category": "wild_animals",
+    "path": "/src/assets/MachingAnimals/wild_animals/hippo.png"
+  },
+  {
+    "name": "lizard",
+    "id": "74dc949f365bcca2e67748a9f8ad04c5",
+    "type": "MachingAnimals",
+    "category": "wild_animals",
+    "path": "/src/assets/MachingAnimals/wild_animals/lizard.jpg"
+  },
+  {
+    "name": "monkey",
+    "id": "9e59399075b5b409b69d6e0fac4e29d5",
+    "type": "MachingAnimals",
+    "category": "wild_animals",
+    "path": "/src/assets/MachingAnimals/wild_animals/monkey.jpg"
+  },
+  {
+    "name": "owl",
+    "id": "154491413cb9e434f930a2826e16762c",
+    "type": "MachingAnimals",
+    "category": "wild_animals",
+    "path": "/src/assets/MachingAnimals/wild_animals/owl.jpg"
+  },
+  {
+    "name": "python",
+    "id": "d3da6124196051df511aa90fc4687184",
+    "type": "MachingAnimals",
+    "category": "wild_animals",
+    "path": "/src/assets/MachingAnimals/wild_animals/python.jpg"
+  },
+  {
+    "name": "snail",
+    "id": "3ee246cf26fb5e4657839196dc0cbf7b",
+    "type": "MachingAnimals",
+    "category": "wild_animals",
+    "path": "/src/assets/MachingAnimals/wild_animals/snail.jpg"
+  },
+  {
+    "name": "squirrel",
+    "id": "45c1b8cabf4abfabd76805d15e535d79",
+    "type": "MachingAnimals",
+    "category": "wild_animals",
+    "path": "/src/assets/MachingAnimals/wild_animals/squirrel.png"
+  },
+  {
+    "name": "tiger",
+    "id": "5e14039fcbdc0353ab83852c74c6a3b1",
+    "type": "MachingAnimals",
+    "category": "wild_animals",
+    "path": "/src/assets/MachingAnimals/wild_animals/tiger.jpg"
+  },
+  {
+    "name": "wolf",
+    "id": "826eca1e7576146d7e3d2b2e7001ae14",
+    "type": "MachingAnimals",
+    "category": "wild_animals",
+    "path": "/src/assets/MachingAnimals/wild_animals/wolf.png"
+  },
+  {
+    "name": "zebra",
+    "id": "7fad5ae875babea19f44829694704063",
+    "type": "MachingAnimals",
+    "category": "wild_animals",
+    "path": "/src/assets/MachingAnimals/wild_animals/zebra.png"
+  }
+]

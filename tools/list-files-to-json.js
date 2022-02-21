@@ -26,8 +26,9 @@ function listFilesSync(fullDirPath, directory) {
       item.name = path.parse(fullPath).name;
 
       if (
-        item.name === "forest" ||
-        item.name === "home" ||
+        // item.name === "forest" ||
+        // item.name === "home" ||
+        item.name === "cat" ||
         item.name === `${path.basename(directory)}-items`
       )
         continue;
