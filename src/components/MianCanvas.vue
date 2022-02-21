@@ -1,4 +1,4 @@
-<script></script>
+<script setup></script>
 
 <template>
   <div id="main-canvas" class="mb-5 flex flex-grow flex-col">

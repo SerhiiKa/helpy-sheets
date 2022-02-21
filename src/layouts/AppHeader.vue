@@ -1,3 +1,9 @@
+<script setup>
+import {
+  ArrowNarrowLeftIcon,
+  ArrowNarrowRightIcon,
+} from "@heroicons/vue/solid";
+</script>
 <template>
   <header id="main-header" class="mb-5 bg-green-700">
     <div
@@ -12,7 +18,17 @@
           height="40"
         />
       </router-link>
-      <h1 class="mx-auto text-3xl uppercase text-white">Helpy Sheets</h1>
+      <ArrowNarrowLeftIcon
+        class="ml-auto h-5 w-5 text-blue-500"
+        @click.prevent="$router.go(-1)"
+      />
+      <h1 class="mx-auto text-2xl uppercase text-white md:text-3xl">
+        Helpy Sheets
+      </h1>
+      <ArrowNarrowRightIcon
+        class="mr-auto h-5 w-5 text-blue-500"
+        @click.prevent="$router.go(1)"
+      />
     </div>
   </header>
 </template>
