@@ -64,7 +64,7 @@ speechText("Hello Kids! Let's play! Feed the cat");
         <draggable
           id="cat-area-draggable"
           v-model="mainGameLists.cat_area.value"
-          class="dragArea flex flex-grow flex-wrap justify-around border-2"
+          class="dragArea flex min-h-[100px] flex-grow flex-wrap items-center justify-around border-2"
           :group="{
             name: 'cat_area',
             put: 'eat_area',
@@ -77,21 +77,27 @@ speechText("Hello Kids! Let's play! Feed the cat");
         >
         </draggable>
       </div>
-      <div id="eatables-area" class="justify flex flex-wrap">
+      <div
+        id="eatables-area"
+        class="flex flex-wrap items-center justify-around"
+      >
         <div
           v-for="item in mainGameLists.eatables.value"
           :key="item.id"
-          class="m-1 h-8 w-8 grow-0 border-2 border-cyan-600 bg-slate-400 bg-cover bg-center bg-no-repeat p-1"
+          class="m-1 h-8 w-8 grow-0 border-2 border-cyan-600 bg-slate-400 bg-cover bg-center bg-no-repeat p-1 sm:h-9 sm:w-9 md:h-10 md:w-10"
           :style="{
             backgroundImage: `url(${ImgUrl(item.path)})`,
           }"
         ></div>
       </div>
-      <div id="noteatables-area" class="justify flex flex-wrap">
+      <div
+        id="noteatables-area"
+        class="flex flex-wrap items-center justify-around"
+      >
         <div
           v-for="item in mainGameLists.noteatables.value"
           :key="item.id"
-          class="m-1 h-8 w-8 grow-0 border-2 border-cyan-600 bg-slate-400 bg-cover bg-center bg-no-repeat p-1"
+          class="m-[1px] h-4 w-4 grow-0 border-2 border-cyan-600 bg-slate-400 bg-cover bg-center bg-no-repeat p-1 sm:h-5 sm:w-5 md:h-9 md:w-9"
           :style="{
             backgroundImage: `url(${ImgUrl(item.path)})`,
           }"
