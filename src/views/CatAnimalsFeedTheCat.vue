@@ -118,15 +118,16 @@ speechText("Hello Kids! Let's play! Feed the cat");
               put: 'cat_area',
               revertClone: true,
             }"
+            :delay="200"
             :animation="250"
-            :sort="true"
+            :sort="false"
             @choose="onChooseCalback"
             @end="onEndCallback"
           >
             <div
               v-for="item in mainGameLists.feed_the_cat_items.value"
               :key="item.id"
-              class="m-1 flex max-h-[100px] min-h-[80px] min-w-[80px] flex-col justify-end border-2 border-cyan-600 bg-sky-200 bg-cover bg-center bg-no-repeat p-1 text-center text-lg font-bold capitalize text-violet-900 underline decoration-orange-600 decoration-2 drop-shadow-md"
+              class="m-1 flex max-h-[100px] min-h-[80px] min-w-[80px] select-none flex-col justify-end border-2 border-cyan-600 bg-sky-200 bg-cover bg-center bg-no-repeat p-1 text-center text-lg font-bold capitalize text-violet-900 underline decoration-orange-600 decoration-2 drop-shadow-md"
               :style="{
                 backgroundImage: `url(${ImgUrl(item.path)})`,
                 textShadow: `rgb(255, 251, 37) 1px 0 10px`,

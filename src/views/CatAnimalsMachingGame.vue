@@ -21,27 +21,20 @@ mainGameLists.wild_animals = ref([]);
 mainGameLists.animals = ref(animalsItem);
 
 function onMoveCallback(evt) {
-  // console.log(evt.item);
   let item = JSON.parse(JSON.stringify(evt.item._underlying_vm_));
-  // console.log(item);
+
   let to_list_name = evt.to.__draggable_component__._.attrs.group.name;
   let from_list_name = evt.from.__draggable_component__._.attrs.group.name;
-  // console.log(evt);
-  // console.log("what: ", item.name, " ", item.category);
-  // console.log("to: ", to_list_name);
-  // console.log("from: ", from_list_name);
-  // console.log(home_animals);
-  // home_animals.value.push(evt.item._underlying_vm_);
+
   if (to_list_name === from_list_name || to_list_name === "animals") return;
 
   if (item.category !== to_list_name) {
     mainGameLists[from_list_name].value.push(item);
 
     const tmp_list = unref(mainGameLists[to_list_name]).filter((element) => {
-      // console.log(element.category, " ", item.category);
       return element.category !== item.category;
     });
-    // console.log(tmp_list);
+
     mainGameLists[to_list_name].value = tmp_list;
     speechText("Ups!");
   } else if (item.category === to_list_name) {
@@ -50,7 +43,6 @@ function onMoveCallback(evt) {
 }
 
 function onChooseCalback(evt) {
-  console.log(evt);
   speechText(evt.item.innerText);
 }
 
@@ -80,6 +72,7 @@ speechText("Hello Kids! Let's play! Match the animals");
             put: ['animals', 'wild_animals'],
             revertClone: true,
           }"
+          :delay="200"
           :animation="250"
           :sort="false"
           @end="onMoveCallback"
@@ -87,7 +80,7 @@ speechText("Hello Kids! Let's play! Match the animals");
           <div
             v-for="item in mainGameLists.home_animals.value"
             :key="item.id"
-            class="m-1 h-14 w-14 border-2 border-cyan-600 bg-slate-400 bg-cover bg-center bg-no-repeat p-1"
+            class="m-1 h-14 w-14 cursor-move select-none border-2 border-cyan-600 bg-slate-400 bg-cover bg-center bg-no-repeat p-1"
             :style="{ backgroundImage: `url(${ImgUrl(item.path)})` }"
           ></div>
         </draggable>
@@ -103,6 +96,7 @@ speechText("Hello Kids! Let's play! Match the animals");
             put: ['animals', 'home_animals'],
             revertClone: true,
           }"
+          :delay="200"
           :animation="250"
           :sort="false"
           @end="onMoveCallback"
@@ -110,7 +104,7 @@ speechText("Hello Kids! Let's play! Match the animals");
           <div
             v-for="item in mainGameLists.wild_animals.value"
             :key="item.id"
-            class="m-1 h-14 w-14 border-2 border-cyan-600 bg-slate-400 bg-cover bg-center bg-no-repeat"
+            class="m-1 h-14 w-14 cursor-move select-none border-2 border-cyan-600 bg-slate-400 bg-cover bg-center bg-no-repeat"
             :style="{ backgroundImage: `url(${ImgUrl(item.path)})` }"
           ></div>
         </draggable>
@@ -126,6 +120,7 @@ speechText("Hello Kids! Let's play! Match the animals");
             put: ['home_animals', 'wild_animals'],
             revertClone: true,
           }"
+          :delay="200"
           :animation="250"
           :sort="false"
           @end="onMoveCallback"
@@ -134,7 +129,7 @@ speechText("Hello Kids! Let's play! Match the animals");
           <div
             v-for="item in mainGameLists.animals.value"
             :key="item.id"
-            class="min-w-14 m-1 flex min-h-[80px] flex-col justify-end border-2 border-cyan-600 bg-sky-200 bg-cover bg-center bg-no-repeat p-1 text-center text-lg font-bold capitalize text-violet-900 underline decoration-orange-600 decoration-2 drop-shadow-md"
+            class="min-w-14 m-1 flex min-h-[80px] cursor-move select-none flex-col justify-end border-2 border-cyan-600 bg-sky-200 bg-cover bg-center bg-no-repeat p-1 text-center text-lg font-bold capitalize text-violet-900 underline decoration-orange-600 decoration-2 drop-shadow-md"
             :style="{
               backgroundImage: `url(${ImgUrl(item.path)})`,
               textShadow: `rgb(255, 251, 37) 1px 0 10px`,
