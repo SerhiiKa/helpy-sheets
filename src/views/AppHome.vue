@@ -1,6 +1,8 @@
 <script setup>
 import MainCanvas from "@/components/MianCanvas.vue";
-import { ClassName } from "@/utils/utils.js";
+import { ClassName, speechText } from "@/utils/utils.js";
+
+speechText("");
 </script>
 
 <template>

@@ -35,7 +35,25 @@ const routes = [
     meta: { title: "Colours" },
     component: () => import("@/views/CatColours.vue"),
   },
+  {
+    path: "/colours/make-the-rainbow",
+    name: "Make the Rainbow",
+    meta: { title: "Make the Rainbow" },
+    component: () => import("@/views/CatColoursMakeTheRainbow.vue"),
+  },
+  {
+    path: "/colours/match-the-colours",
+    name: "Match the Colours",
+    meta: { title: "Match the Colours" },
+    component: () => import("@/views/CatColoursMatchTheColours.vue"),
+  },
 
+  {
+    path: "/colours/colours-song",
+    name: "Colours Song",
+    meta: { title: "Colours Song" },
+    component: () => import("@/views/CatColoursSong.vue"),
+  },
   {
     path: "/my-family",
     name: "My Family",
