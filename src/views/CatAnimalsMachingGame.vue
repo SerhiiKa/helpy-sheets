@@ -20,7 +20,7 @@ mainGameLists.home_animals = ref([]);
 mainGameLists.wild_animals = ref([]);
 mainGameLists.animals = ref(animalsItem);
 
-function onMoveCallback(evt) {
+function onEndCallback(evt) {
   let item = JSON.parse(JSON.stringify(evt.item._underlying_vm_));
 
   let to_list_name = evt.to.__draggable_component__._.attrs.group.name;
@@ -72,10 +72,11 @@ speechText("Hello Kids! Let's play! Match the animals");
             put: ['animals', 'wild_animals'],
             revertClone: true,
           }"
-          :delay="200"
+          :delay="75"
+          :touch-start-threshold="10"
           :animation="250"
           :sort="false"
-          @end="onMoveCallback"
+          @end="onEndCallback"
         >
           <div
             v-for="item in mainGameLists.home_animals.value"
@@ -96,10 +97,11 @@ speechText("Hello Kids! Let's play! Match the animals");
             put: ['animals', 'home_animals'],
             revertClone: true,
           }"
-          :delay="200"
+          :delay="75"
+          :touch-start-threshold="10"
           :animation="250"
           :sort="false"
-          @end="onMoveCallback"
+          @end="onEndCallback"
         >
           <div
             v-for="item in mainGameLists.wild_animals.value"
@@ -120,10 +122,11 @@ speechText("Hello Kids! Let's play! Match the animals");
             put: ['home_animals', 'wild_animals'],
             revertClone: true,
           }"
-          :delay="200"
+          :delay="75"
+          :touch-start-threshold="10"
           :animation="250"
           :sort="false"
-          @end="onMoveCallback"
+          @end="onEndCallback"
           @choose="onChooseCalback"
         >
           <div
