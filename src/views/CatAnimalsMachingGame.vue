@@ -223,7 +223,7 @@ speechText("Hello Kids! Let's play! Match the animals");
 }
 
 #score_area {
-  grid-area: 1 / 1 / 2 / 3;
+  grid-area: 2 / 1 / 3 / 3;
   background-color: lavender;
 }
 
@@ -234,7 +234,7 @@ speechText("Hello Kids! Let's play! Match the animals");
   background-repeat: no-repeat;
   background-color: antiquewhite;
   background-position: center;
-  grid-area: 2 / 1 / 3 / 2;
+  grid-area: 1 / 1 / 2 / 2;
 }
 #wild_animals_area {
   background-image: url(@/assets/MachingAnimals/wild_animals/forest.jpg);
@@ -243,7 +243,7 @@ speechText("Hello Kids! Let's play! Match the animals");
   background-repeat: no-repeat;
   background-color: bisque;
   background-position: center;
-  grid-area: 2 / 2 / 3 / 3;
+  grid-area: 1 / 2 / 1 / 3;
 }
 #animals_area {
   background: yellow;
