@@ -43,8 +43,6 @@ function onEndCallback(evt) {
 }
 
 function onChooseCalback(evt) {
-  evt.originalEvent.preventDefault;
-  console.log(evt);
   speechText(evt.item.innerText);
 }
 
