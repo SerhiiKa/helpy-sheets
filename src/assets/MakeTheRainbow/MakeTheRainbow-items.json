@@ -1,0 +1,51 @@
+[
+  {
+    "name": "blue",
+    "id": "d364083b1e8158a62999653c38a94c9f",
+    "type": "MakeTheRainbow",
+    "category": "make_the_rainbow",
+    "path": "/src/assets/MakeTheRainbow/make_the_rainbow/blue.png"
+  },
+  {
+    "name": "green",
+    "id": "d68dc583a61b80b6041eac4b6d756e5a",
+    "type": "MakeTheRainbow",
+    "category": "make_the_rainbow",
+    "path": "/src/assets/MakeTheRainbow/make_the_rainbow/green.png"
+  },
+  {
+    "name": "indigo",
+    "id": "c8ca04cd044f7ec7db7e6a90acbfe72d",
+    "type": "MakeTheRainbow",
+    "category": "make_the_rainbow",
+    "path": "/src/assets/MakeTheRainbow/make_the_rainbow/indigo.png"
+  },
+  {
+    "name": "orange",
+    "id": "2077a58e1f18a1a2bb19816d565e42f1",
+    "type": "MakeTheRainbow",
+    "category": "make_the_rainbow",
+    "path": "/src/assets/MakeTheRainbow/make_the_rainbow/orange.png"
+  },
+  {
+    "name": "purple",
+    "id": "0ea7abc57150eb84df62967c29197bed",
+    "type": "MakeTheRainbow",
+    "category": "make_the_rainbow",
+    "path": "/src/assets/MakeTheRainbow/make_the_rainbow/purple.png"
+  },
+  {
+    "name": "red",
+    "id": "156c24afdd9898a0f4695d9b5cceda01",
+    "type": "MakeTheRainbow",
+    "category": "make_the_rainbow",
+    "path": "/src/assets/MakeTheRainbow/make_the_rainbow/red.png"
+  },
+  {
+    "name": "yellow",
+    "id": "5c7e7ecea825c5b25e44b7e4f1c6dd90",
+    "type": "MakeTheRainbow",
+    "category": "make_the_rainbow",
+    "path": "/src/assets/MakeTheRainbow/make_the_rainbow/yellow.png"
+  }
+]

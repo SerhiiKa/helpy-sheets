@@ -31,7 +31,13 @@ function shuffleArray(array) {
   }
 }
 
+function getRandomIntInclusive(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min; //Максимум и минимум включаются
+}
+
 const ClassName =
   "mb-5 inline-flex items-center justify-center rounded-xl border border-gray-900 bg-red-600 px-5 py-3 text-3xl font-bold text-white shadow-md shadow-slate-600 transition duration-300 ease-in-out hover:bg-red-500 hover:shadow-lg hover:shadow-slate-700 focus:outline-none capitalize";
 
-export { speechText, ClassName, shuffleArray };
+export { speechText, ClassName, shuffleArray, getRandomIntInclusive };
