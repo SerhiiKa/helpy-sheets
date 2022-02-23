@@ -35,7 +35,6 @@ let dragOptions = ref({
   animation: 200,
   sort: true,
 });
-function onEndCallback(evt) {}
 
 function onChooseCalback(evt) {
   speechText(evt.item.innerText);
@@ -162,7 +161,6 @@ let customStyle = function () {
           class="list-group mx-auto max-w-[700px] bg-slate-100/50 p-2"
           v-bind="dragOptions"
           @choose="onChooseCalback"
-          @end="onEndCallback"
         >
           <div
             v-for="item in mainGameLists.MakeTheRainbowItems.value"
