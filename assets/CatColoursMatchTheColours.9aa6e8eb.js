@@ -1,0 +1,1 @@
+import{_ as s}from"./MianCanvas.0d98f767.js";import{s as t}from"./utils.1944985b.js";import{o as e,g as a,w as o,a as c}from"./vendor.94a8c413.js";const r=c("div",null,"Let's match the colours",-1),p={setup(n){return t("Let's match the colours"),(_,l)=>(e(),a(s,null,{default:o(()=>[r]),_:1}))}};export{p as default};

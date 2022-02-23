@@ -1,0 +1,1 @@
+import{_ as a}from"./MianCanvas.0d98f767.js";import{o as t,g as e,w as s,l as o}from"./vendor.94a8c413.js";const r=o(" MyFamily "),f={setup(c){return(_,n)=>(t(),e(a,null,{default:s(()=>[r]),_:1}))}};export{f as default};

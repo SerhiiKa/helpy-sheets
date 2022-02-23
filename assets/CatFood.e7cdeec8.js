@@ -1,0 +1,1 @@
+import{_ as a}from"./MianCanvas.0d98f767.js";import{o,g as t,w as e,l as s}from"./vendor.94a8c413.js";const r=s(" Food "),i={setup(c){return(_,n)=>(o(),t(a,null,{default:e(()=>[r]),_:1}))}};export{i as default};
